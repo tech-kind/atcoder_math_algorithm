@@ -15,6 +15,8 @@ class Program
         int y2 = int.Parse(circle2[1]);
         int r2 = int.Parse(circle2[2]);
 
+        // なぜかMath.Powを使って累乗を計算しないとうまくいかない
+        // double dist = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
         double dist = Math.Sqrt(Math.Pow(x1 - x2, 2)+ Math.Pow(y1 - y2, 2));
 
         int type = 3;
